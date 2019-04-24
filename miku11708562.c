@@ -9,11 +9,11 @@ void main()
 char p[10][5],temp[5];
 int i,j,pt[10],wt[10],totwt=0,pr[10],temp1,n;
 float avgwt;
-printf("Enter no of girls:");
+printf("Enter no of boys:");
 scanf("%d",&n);
 for(i=0;i<n;i++)
 {
-printf("Enter girl %d name:",i+1);
+printf("Enter boy %d name:",i+1);
 scanf("%s",&p[i]);
 printf("Enter process time:");
 scanf("%d",&pt[i]);
@@ -45,7 +45,7 @@ wt[i]=wt[i-1]+wt[i-1];
 totwt=totwt+wt[i];
 }
 avgwt=(float)totwt/n;
-printf("G_name\t P_time\t No.Gifts\tW_time\n");
+printf("B_name\t P_time\t No.Gifts\tW_time\n");
 for(i=0;i<n;i++)
 {
 printf(" %s\t %d\t %d\t \t%d\n" ,p[i],pt[i],pr[i],wt[i]);
